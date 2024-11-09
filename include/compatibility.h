@@ -1,0 +1,12 @@
+#include <openxr/openxr.h>
+#include <openxr/openxr_platform.h>
+ 
+
+
+extern PFN_xrCreateSession _nextxrCreateSession;
+extern PFN_xrEndFrame _nextxrEndFrame;
+extern PFN_xrCreateSwapchain _nextxrCreateSwapchain;
+extern PFN_xrAcquireSwapchainImage _nextxrAcquireSwapchainImage;
+extern PFN_xrWaitSwapchainImage _nextxrWaitSwapchainImage;
+extern PFN_xrReleaseSwapchainImage _nextxrReleaseSwapchainImage;
+extern PFN_xrEnumerateSwapchainImages _nextxrEnumerateSwapchainImages;
